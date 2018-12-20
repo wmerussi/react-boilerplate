@@ -1,10 +1,17 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ManifestPlugin = require('webpack-manifest-plugin');
 
-const src = './src/';
+const htmlWebpackPlugin = () => (
+  new HtmlWebpackPlugin({
+    template: './src/index.html',
+  })
+);
+
+const manifestPlugin = () => (
+  new ManifestPlugin()
+);
 
 module.exports = [
-  new HtmlWebpackPlugin({
-    inject: 'body',
-    template: src + 'index.html',
-  }),
+  htmlWebpackPlugin(),
+  manifestPlugin(),
 ];

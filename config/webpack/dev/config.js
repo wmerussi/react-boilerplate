@@ -6,9 +6,8 @@ const plugins = require('./plugins.config');
 module.exports = merge(common, {
   devServer: {
     inline: true,
-    contentBase: './dist',
     port: 3333,
   },
-  module: 'development',
+  mode: 'development',
   plugins,
 });
