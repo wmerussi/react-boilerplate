@@ -10,8 +10,6 @@ const App = () => (
     <div className={styles[`${componentClass}__title`]}>
       <img
         className={styles[`${componentClass}__title-image`]}
-        width={90}
-        height={90}
         src={logo}
         alt=""
       />

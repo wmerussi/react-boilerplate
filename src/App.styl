@@ -22,7 +22,13 @@ $react-boilerplate
     align-items center
 
     &-image
+      width 40px
+      height 40px
       animation spin 1200ms ease-in-out
+
+      @media (min-width: 768px)
+        width 60px
+        height 60px
 
     &-link
       position: absolute
@@ -44,12 +50,15 @@ $react-boilerplate
 
     &-text
       max-width 0
-      font-size 48px
+      font-size 28px
 
       animation horizontally-appear 400ms ease-in-out 400ms forwards
       overflow: hidden
       transform-origin left
       white-space nowrap
+
+      @media (min-width: 768px)
+        font-size 48px
 
     &-wrapper
       position relative
@@ -59,6 +68,7 @@ $react-boilerplate
     max-width 0
 
   100%
+    margin-left 8px
     max-width 360px
 
 @keyframes appear
