@@ -10,7 +10,8 @@
   "scripts": {
     "dev": "webpack-dev-server --open --config ./config/webpack/dev/config.js",
     "eject": "react-scripts eject",
-    "lint": "eslint . --ext .js,.jsx"
+    "lint": "eslint . --ext .js,.jsx",
+    "prod": "webpack --config ./config/webpack/prod/config.js"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",
