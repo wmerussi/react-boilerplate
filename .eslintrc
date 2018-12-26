@@ -3,8 +3,8 @@
   "globals": {
     "document": true,
     "fetch": true,
-    "navigator": true,
     "it": true,
+    "navigator": true,
     "window": true
   },
   "rules": {

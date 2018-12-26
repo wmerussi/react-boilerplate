@@ -1,5 +1,3 @@
-const path = require('path');
-
 const babelLoader = require('./babel-loader.config');
 const eslintLoader = require('./eslint-loader.config');
 const fileLoader = require('./file-loader.config');

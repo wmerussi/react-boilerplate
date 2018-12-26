@@ -1,3 +1,10 @@
+const autoprefixer = require('autoprefixer')({
+  browsers: [
+    '> 1%',
+    'last 2 versions',
+  ],
+});
+
 module.exports = {
   exclude: /node_modules/,
   test: /\.styl$/,
@@ -9,7 +16,13 @@ module.exports = {
         modules: true,
       },
     },
-    'postcss-loader',
+    {
+      loader: 'postcss-loader',
+      options: {
+        ident: 'postcss',
+        plugins: [autoprefixer],
+      },
+    },
     'stylus-loader',
   ],
 };
