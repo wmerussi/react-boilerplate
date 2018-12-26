@@ -1,8 +1,6 @@
 import React from 'react';
 import logo from './assets/images/logo.svg';
 
-import Welcome from '../ui/components/box';
-
 import styles from './App.styl';
 
 const App = () => (
@@ -24,7 +22,6 @@ const App = () => (
         Learn React
       </a>
     </header>
-    <Welcome />
   </div>
 );
 
