@@ -1,2 +1,79 @@
-.container
-  box-shadow 1px 1px 0 0 black
+@import url('https://fonts.googleapis.com/css?family=Roboto')
+
+*
+  margin 0
+  box-sizing border-box
+
+$react-boilerplate
+  display flex
+  flex-direction column
+  justify-content center
+  align-items center
+
+  padding 16px
+  width 100vw
+  height 100vh
+
+  font-family Roboto, sans-serif
+  color #222
+
+  &__title
+    display flex
+    align-items center
+
+    &-image
+      animation spin 1200ms ease-in-out
+
+    &-link
+      position: absolute
+      top 100%
+      left 50%
+      transform translateX(-50%)
+
+      opacity 0
+      animation appear 400ms ease-in-out 800ms forwards
+      transition color 200ms
+
+      &
+      &:active
+        color #999
+
+      &:hover
+      &:focus
+        color #61DAFB
+
+    &-text
+      max-width 0
+      font-size 48px
+
+      animation horizontally-appear 400ms ease-in-out 400ms forwards
+      overflow: hidden
+      transform-origin left
+      white-space nowrap
+
+    &-wrapper
+      position relative
+
+@keyframes horizontally-appear
+  0%
+    max-width 0
+
+  100%
+    max-width 360px
+
+@keyframes appear
+  0%
+    opacity 0
+
+  100%
+    opacity 1
+
+@keyframes spin
+  0%
+    transform rotate(0)
+
+  100%
+    transform rotate(360deg)
+
+.react-boilerplate
+  @extend $react-boilerplate

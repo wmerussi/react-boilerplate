@@ -1,9 +1,4 @@
-const autoprefixer = require('autoprefixer')({
-  browsers: [
-    '> 1%',
-    'last 2 versions',
-  ],
-});
+const autoprefixer = require('../common/autoprefixer.config');
 
 module.exports = {
   exclude: /node_modules/,
@@ -13,6 +8,7 @@ module.exports = {
     {
       loader: 'css-loader',
       options: {
+        localIdentName: '[local]',
         modules: true,
       },
     },

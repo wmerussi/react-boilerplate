@@ -4,7 +4,7 @@ module.exports = {
     {
       loader: 'file-loader',
       options: {
-        name: '[name]-[hash:7].[ext]',
+        name: '[name].[ext]',
       },
     },
   ],

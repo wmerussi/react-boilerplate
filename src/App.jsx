@@ -3,25 +3,30 @@ import logo from './assets/images/logo.svg';
 
 import styles from './App.styl';
 
+const componentClass = 'react-boilerplate';
+
 const App = () => (
-  <div>
-    <header className={styles.container}>
-      <img width={30} height={30} src={logo} alt="logo" />
-      <p>
-        Edit
-        {' '}
-        <code>src/App.js</code>
-        {' '}
-        and save to reload.
-      </p>
-      <a
-        href="https://reactjs.org"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Learn React
-      </a>
-    </header>
+  <div className={styles[componentClass]}>
+    <div className={styles[`${componentClass}__title`]}>
+      <img
+        className={styles[`${componentClass}__title-image`]}
+        width={90}
+        height={90}
+        src={logo}
+        alt=""
+      />
+
+      <div className={styles[`${componentClass}__title-wrapper`]}>
+        <h1 className={styles[`${componentClass}__title-text`]}>React Boilerplate</h1>
+
+        <a
+          className={styles[`${componentClass}__title-link`]}
+          href="https://gitlab.com/wmerussi/react-boilerplate"
+        >
+          GitLab
+        </a>
+      </div>
+    </div>
   </div>
 );
 
