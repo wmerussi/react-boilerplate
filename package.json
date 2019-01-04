@@ -4,12 +4,10 @@
   "private": true,
   "dependencies": {
     "react": "^16.6.3",
-    "react-dom": "^16.6.3",
-    "react-scripts": "2.1.1"
+    "react-dom": "^16.6.3"
   },
   "scripts": {
     "dev": "webpack-dev-server --open --config ./config/webpack/dev/config.js",
-    "eject": "react-scripts eject",
     "lint": "eslint . --ext .js,.jsx",
     "prod": "webpack --config ./config/webpack/prod/config.js",
     "test": "jest",
@@ -30,6 +28,7 @@
     "enzyme-adapter-react-16": "^1.7.1",
     "eslint": "^5.10.0",
     "eslint-config-airbnb": "^17.1.0",
+    "eslint-loader": "^2.1.1",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-react": "^7.11.0",
