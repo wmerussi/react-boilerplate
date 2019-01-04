@@ -1,3 +1,16 @@
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+const webpack = require('webpack');
+
 const common = require('../common/plugins.config');
 
-module.exports = common;
+const definePlugin = new webpack.DefinePlugin({
+  'process.env': {
+    NODE_ENV: JSON.stringify('development'),
+  },
+});
+
+module.exports = [
+  ...common,
+  new BundleAnalyzerPlugin(),
+  definePlugin,
+];

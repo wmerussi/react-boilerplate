@@ -10,6 +10,7 @@ module.exports = merge(common, {
     inline: true,
     port: 3333,
   },
+  devtool: 'inline-source-map',
   mode: 'development',
   module: { rules },
   plugins,
