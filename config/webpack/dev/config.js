@@ -8,7 +8,9 @@ const rules = require('./rules.config');
 module.exports = merge(common, {
   devServer: {
     inline: true,
+    noInfo: true,
     port: 3333,
+    stats: 'minimal',
   },
   devtool: 'inline-source-map',
   mode: 'development',
