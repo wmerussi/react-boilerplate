@@ -1,31 +1,34 @@
 import React from 'react';
-import logo from './assets/images/logo.svg';
 
 import styles from './App.styl';
 
-const componentClass = 'react-boilerplate';
+import logo from './assets/images/logo.svg';
 
-const App = () => (
-  <div className={styles[componentClass]}>
-    <div className={styles[`${componentClass}__title`]}>
-      <img
-        className={styles[`${componentClass}__title-image`]}
-        src={logo}
-        alt=""
-      />
+const componentClassName = 'react-boilerplate';
 
-      <div className={styles[`${componentClass}__title-wrapper`]}>
-        <h1 className={styles[`${componentClass}__title-text`]}>React Boilerplate</h1>
+function App() {
+  return (
+    <div className={styles[componentClassName]}>
+      <div className={styles[`${componentClassName}__title`]}>
+        <img
+          className={styles[`${componentClassName}__title-image`]}
+          src={logo}
+          alt=""
+        />
 
-        <a
-          className={styles[`${componentClass}__title-link`]}
-          href="https://gitlab.com/wmerussi/react-boilerplate"
-        >
-          GitLab
-        </a>
+        <div className={styles[`${componentClassName}__title-wrapper`]}>
+          <h1 className={styles[`${componentClassName}__title-text`]}>React Boilerplate</h1>
+
+          <a
+            className={styles[`${componentClassName}__title-link`]}
+            href="https://gitlab.com/wmerussi/react-boilerplate"
+          >
+            GitLab
+          </a>
+        </div>
       </div>
     </div>
-  </div>
-);
+  );
+}
 
 export default App;
