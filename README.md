@@ -1,6 +1,6 @@
 # React Boilerplate
 
-Base project to init other projects.
+React boilerplate for faster project development.
 
 ## Available Scripts
 
