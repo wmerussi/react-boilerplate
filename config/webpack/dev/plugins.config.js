@@ -1,4 +1,3 @@
-const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const webpack = require('webpack');
 const WebpackBar = require('webpackbar');
 
@@ -10,11 +9,10 @@ const definePlugin = new webpack.DefinePlugin({
   },
 });
 
-const webpackbar = new WebpackBar();
+const webpackBar = new WebpackBar();
 
 module.exports = [
   ...common,
-  new BundleAnalyzerPlugin(),
   definePlugin,
-  webpackbar,
+  webpackBar,
 ];
